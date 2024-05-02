@@ -1,7 +1,7 @@
 // OpenGraphCardMetaData.tsx
-import { System } from '@/types';
+import { OpenSourceSystemType } from '@/types';
 
-const OpenGraphCardMetaData = (system: System) => {
+const OpenGraphCardMetaData = (system: OpenSourceSystemType) => {
     const title = `Searchjunct: ${system.name}`
 
     const description = `Systems card for the ${system.name} search system.`

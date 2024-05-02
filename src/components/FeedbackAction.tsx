@@ -30,15 +30,15 @@ export const FeedbackAction: React.FC = () => {
         <div className="flex flex-col gap-1 mt-1">
           <Button variant="outline" className="hover:bg-blue-100" onClick={() => {
             window.open(
-              'https://twitter.com/intent/tweet?text=Hey @archignes, I just used Searchjunct.com and...', '_blank');
+              'https://twitter.com/intent/tweet?text=Hey @archignes, I was just on tiyse.com and...', '_blank');
           }}>
             <EnvelopeClosedIcon className="w-4 h-4 mr-1" />Tweet @archignes</Button>
           <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open(
             'mailto:daniel@archignes.com?subject=Feedback on Searchjunct.com', '_blank'); }}>
             <EnvelopeClosedIcon className="w-4 h-4 mr-1" />Email Daniel</Button>
-          <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open('https://github.com/archignes/searchjunct/issues/new', '_blank'); }}>
+          <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open('https://github.com/archignes/tiyse/issues/new', '_blank'); }}>
             <GitHubLogoIcon className="w-4 h-4 mr-1"/>New GitHub issue</Button>
-          <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open('https://github.com/archignes/searchjunct/issues', '_blank'); }}>
+          <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open('https://github.com/archignes/tiyse/issues', '_blank'); }}>
             <GitHubLogoIcon className="w-4 h-4 mr-1"/>See open GitHub issues</Button>
         </div>
         <DrawerFooter>

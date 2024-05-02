@@ -2,27 +2,19 @@
 import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
-import Header from '../src/components/header/Header';
-import Footer from '../src/components/Footer';
-import SystemList from "../src/components/SystemList";
-import SearchBar from "../src/components/SearchBar";
-import ShortcutBar from "../src/components/ShortcutBar";
-import { FeedbackAction } from "../src/components/FeedbackAction";
-import ViewMultisearchSheet from '../src/components/search/multisearch/MultisearchManagementSheet';
-import SetDefaults from '../src/components/SetDefaults';
+import LandingPage from '../src/components/LandingPage';
 
-
-const title = "Searchjunct"
-const description = "Searchjunct helps you explore possibility in search by routing your query across multiple search engines.";
-const url = "https://searchjunct.com";
-const image = "https://searchjunct.com/screenshots/home.png";
+const title = "TIYSE"
+const description = "TIYSE supports you in crafting your own search engines or contributing to open source web search.";
+const url = "https://tiyse.com";
+const image = "https://tiyse.com/header.png";
 
 const HomePage = () => {
   return (
       <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/searchjunct.svg" />
+        <link rel="icon" href="/tiyse.svg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         {/* <!-- HTML Meta Tags --> */}
@@ -39,18 +31,9 @@ const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       {typeof window !== 'undefined' && !window.location.href.includes('localhost') ? (
-        <Script defer data-domain="searchjunct.com" src="https://plausible.io/js/script.js" />
+        <Script defer data-domain="tiyse.com" src="https://plausible.io/js/script.js" />
       ) : null}
-      <div className="mx-1 w-9/10 sm:w-3/4 sm:mx-auto md:w-3/7 lg:w-3/5 xl:w-2/4">
-        <div className="flex flex-row mx-7">
-        <div className={`w-full bg-white rounded-md mr-1 p-1`}>
-          <SearchBar />
-          <ShortcutBar />
-          <SystemList />
-        </div>
-        </div>
-        </div>
-      <SetDefaults />
+      <LandingPage />
     </>
     
   );

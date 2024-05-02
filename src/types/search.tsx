@@ -1,8 +1,8 @@
 import { Query } from "@/types";
-import { System, MultisearchActionObject } from "@/types";
+import { OpenSourceSystemType, MultisearchActionObject } from "@/types";
 
 export interface PreppedSearchLinkParams {
-    system: System;
+    system: OpenSourceSystemType;
     query: string;
 }
 
@@ -13,7 +13,7 @@ export interface getNextUnsearchedSystemParams {
 }
 
 export interface SubmitSearchParams {
-    system?: System;
+        system?: OpenSourceSystemType;
     query?: string;
 }
 
@@ -21,22 +21,22 @@ export interface SubmitSearchParams {
 export interface HandleSearchShortcutCandidateParams {
     currentQuery: string;
     shortcutCandidate: string;
-    systems: System[];
+    systems: OpenSourceSystemType[];    
     multisearchActionObjects: MultisearchActionObject[];
-    getNextUnsearchedSystem: (updatedSystemsSearched?: Record<string, boolean>, skipSteps?: number) => System | undefined;
-    cleanupSearch: (system: System, query: string) => void;
-    getPreppedSearchLink: ({ system, query }: { system: System, query: string }) => string
+    getNextUnsearchedSystem: (updatedSystemsSearched?: Record<string, boolean>, skipSteps?: number) => OpenSourceSystemType | undefined;
+    cleanupSearch: (system: OpenSourceSystemType, query: string) => void;
+    getPreppedSearchLink: ({ system, query }: { system: OpenSourceSystemType, query: string }) => string
 }
 
 export interface HandleSearchProps {
-    system: System,
+    system: OpenSourceSystemType,   
     queryObject: Query,
-    getLastSkippedSystem: () => System | undefined,
+    getLastSkippedSystem: () => OpenSourceSystemType | undefined,
     updateSystemsSkipped: (systemId: string, skipped: boolean) => void,
     handleSearch: (params: HandleSearchProps) => void,
     systemsDisabled: Record<string, boolean>,
     systemsDeleted: Record<string, boolean>,
-    systemsCurrentOrder: System[],
-    getPreppedSearchLink: ({ system, query }: { system: System, query: string }) => string
-    cleanupSearch: (system: System, currentQuery: string) => void,
+    systemsCurrentOrder: OpenSourceSystemType[],
+    getPreppedSearchLink: ({ system, query }: { system: OpenSourceSystemType, query: string }) => string
+    cleanupSearch: (system: OpenSourceSystemType, currentQuery: string) => void,
 }

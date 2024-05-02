@@ -1,16 +1,28 @@
 // systems.tsx
 
-export interface System {
+export interface OpenSourceSystemType {
     id: string;
+    type: string;
     name: string;
     nondistinctUrl?: boolean;
+    supportedIndexes?: string[];
+    githubDescription?: string;
+    supportedIndexesText?: {
+        text: string;
+        quote: boolean;
+        code?: boolean;
+        urls?: {
+            label: string;
+            url: string;
+        }[];
+    };
     description?: string;
     parent?: string;
     children?: string[];
     seeAlso?: string[];
     baseUrlFor?: string[];
     accountRequired?: boolean;
-    searchLink: string;
+    searchLink?: string;
     indices?: [
         {
             name: string;
@@ -88,7 +100,6 @@ export interface System {
     androidApp?: string;
     addFaviconBackground?: string;
     defaultInBrowser?: string[];
-    type?: string;
     note?: {
         text: string;
         links: {
