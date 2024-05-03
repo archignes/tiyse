@@ -30,7 +30,7 @@ export const FeedbackAction: React.FC = () => {
         <div className="flex flex-col gap-1 mt-1">
           <Button variant="outline" className="hover:bg-blue-100" onClick={() => {
             window.open(
-              'https://twitter.com/intent/tweet?text=Hey @archignes, I was just on tiyse.com and...', '_blank');
+              'https://twitter.com/intent/tweet?text=Hey @archignes, I was just on tiyse.org and...', '_blank');
           }}>
             <EnvelopeClosedIcon className="w-4 h-4 mr-1" />Tweet @archignes</Button>
           <Button variant="outline" className="hover:bg-blue-100" onClick={() => { window.open(

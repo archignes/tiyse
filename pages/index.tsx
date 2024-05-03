@@ -6,8 +6,8 @@ import LandingPage from '../src/components/LandingPage';
 
 const title = "TIYSE"
 const description = "TIYSE supports you in crafting your own search engines or contributing to open source web search.";
-const url = "https://tiyse.com";
-const image = "https://tiyse.com/header.png";
+const url = "https://tiyse.org";
+const image = "https://tiyse.org/header.png";
 
 const HomePage = () => {
   return (
@@ -31,7 +31,7 @@ const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       {typeof window !== 'undefined' && !window.location.href.includes('localhost') ? (
-        <Script defer data-domain="tiyse.com" src="https://plausible.io/js/script.js" />
+        <Script defer data-domain="tiyse.org" src="https://plausible.io/js/script.js" />
       ) : null}
       <LandingPage />
     </>
