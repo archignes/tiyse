@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';d
+import React from 'react';
 import Link from 'next/link';
 import OpenSourceSystems from './OpenSourceSystems';
 import { Alert, AlertDescription } from './ui/alert';
