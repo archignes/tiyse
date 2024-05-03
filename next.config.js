@@ -11,11 +11,11 @@ module.exports = {
 
             config.optimization.splitChunks = {
                 chunks: 'all',
-                minSize: 20000,
-                maxSize: 0,
+                minSize: 10000, // Reduced minSize
+                maxSize: 250000, // Enable maxSize splitting
                 minChunks: 1,
-                maxAsyncRequests: 30,
-                maxInitialRequests: 30,
+                maxAsyncRequests: 20, // Reduced maxAsyncRequests
+                maxInitialRequests: 20, // Reduced maxInitialRequests
                 automaticNameDelimiter: '~',
                 enforceSizeThreshold: 50000,
                 cacheGroups: {
