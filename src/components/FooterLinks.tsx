@@ -39,7 +39,7 @@ export const SystemFooterLinks: React.FC<{ system: OpenSourceSystemType, skip: s
       {
         system.hackerNewsLink && (
           <a href={system.hackerNewsLink} target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-gray-100 rounded-md block">
-            <Image src="/favicons/ycombinator.ico" alt="Hacker News Icon" className="w-4 h-4" height={16} width={16} style={{ filter: "grayscale(1) contrast(100) brightness(1)" }} />
+            <Image src="/favicons/ycombinator.ico" alt="Hacker News Icon" className="w-4 h-4" height={16} width={16} style={{ filter: "grayscale(100%) contrast(100%) brightness(100%)" }} />
           </a>
         )
       }

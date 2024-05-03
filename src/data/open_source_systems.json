@@ -24,7 +24,8 @@
       {"query": "How fast can an elephant run?", "url": "https://omniplex.ai/chat/zw7NGZ41WK"}
     ],
     "characteristics": {
-      "output": "generated response"}
+      "output": "generated response"},
+    "hacker_news_link": "https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=https%3A%2F%2Fgithub.com%2FOmniplex-ai%2Fomniplex&sort=byPopularity&type=story"
   },
   {
     "name": "Simplicity",
@@ -46,6 +47,7 @@
     "twitter_link": "https://twitter.com/joinpongo",
     "open_source_license": "MIT License",
     "github_link": "https://github.com/PongoAI/simplicity"
+
   },
   {
     "name": "Marginalia Search",
@@ -62,7 +64,8 @@
     "characteristics": {
       "output": "list of links"
     },
-    "open_source_license": "GNU Affero General Public License v3.0"
+    "open_source_license": "GNU Affero General Public License v3.0",
+    "hacker_news_link": "https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=https%3A%2F%2Fwww.marginalia.nu%2F&sort=byPopularity&type=story"
   },
   {
     "name": "SciPhi Agent Search",
@@ -133,6 +136,7 @@
     "github_link": "https://github.com/huggingface/chat-ui",
     "open_source_license": "Apache License 2.0",
     "manual_switch_required": true,
+    "hacker_news_link": "https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=%22https%3A%2F%2Fgithub.com%2Fhuggingface%2Fchat-ui%22&sort=byPopularity&type=story",
     "characteristics": {
       "output": "generated response"
     }

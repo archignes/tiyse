@@ -46,7 +46,7 @@ const OpenSourceSystemItem: React.FC<{ system: OpenSourceSystemType }> = ({ syst
   }
 
 
-  const systemLink = system.searchLink || system.githubLink;
+  const systemLink = (system.searchLink || system.githubLink)?.replace("%s", encodeURIComponent(system.name));
 
   return ( 
     <Card>
