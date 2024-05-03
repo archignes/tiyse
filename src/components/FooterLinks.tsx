@@ -7,11 +7,6 @@ import { DiscordLogoIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, T
 import CIcon from '@coreui/icons-react';
 import { cibWikipedia, cibYoutube, cibMatrix, cibReddit, cibMastodon, cibFacebook } from '@coreui/icons';
 
-
-type PlatformIcons = {
-  [key: string]: string;
-};
-
 const HuggingFaceIcon: React.FC<{ className: string, style: React.CSSProperties }> = ({ className, style }) => {
   return (
     <svg className={className} viewBox="0 0 500 463" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
