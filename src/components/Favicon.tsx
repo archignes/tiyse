@@ -8,7 +8,7 @@ export const SystemFavicon: React.FC<{ system: OpenSourceSystemType, focus_mode?
 
   if (system.favicon?.startsWith('http')) {
     return (
-      <img src={system.favicon}
+      <Image src={system.favicon}
         alt={`${system.name} favicon`} width={15} height={15}
         className={`rounded-md p-1 ${focus_mode ? 'flex-shrink-0 w-8 h-8 mr-2' : mini_mode ? 'bg-white w-4 h-4 mx-1' : 'flex-shrink-0 w-7 h-7 mr-2'} ${className}`} />
     )

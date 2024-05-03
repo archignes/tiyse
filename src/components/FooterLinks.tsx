@@ -1,6 +1,7 @@
 // FooterLinks.tsx
 
 import React from 'react';
+import Image from 'next/image';
 import { OpenSourceSystemType } from '../types/system';
 import { DiscordLogoIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import CIcon from '@coreui/icons-react';
@@ -9,10 +10,6 @@ import { cibWikipedia, cibYoutube, cibMatrix, cibReddit, cibMastodon, cibFaceboo
 
 type PlatformIcons = {
   [key: string]: string;
-};
-
-const platform_icons: PlatformIcons = {
-  "Hacker News": "https://news.ycombinator.com/favicon.ico"
 };
 
 const HuggingFaceIcon: React.FC<{ className: string, style: React.CSSProperties }> = ({ className, style }) => {
@@ -47,7 +44,7 @@ export const SystemFooterLinks: React.FC<{ system: OpenSourceSystemType, skip: s
       {
         system.hackerNewsLink && (
           <a href={system.hackerNewsLink} target="_blank" rel="noopener noreferrer" className="p-1 hover:bg-gray-100 rounded-md block">
-            <img src={platform_icons["Hacker News"]} alt="Hacker News Icon" className="w-4 h-4" style={{ filter: "grayscale(1) contrast(100) brightness(1)" }} />
+            <Image src="/favicons/ycombinator.ico" alt="Hacker News Icon" className="w-4 h-4" height={16} width={16} style={{ filter: "grayscale(1) contrast(100) brightness(1)" }} />
           </a>
         )
       }

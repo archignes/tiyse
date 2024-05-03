@@ -1,9 +1,9 @@
 "use client"
 
 import React from 'react';
-import Image from 'next/image';
+import Link from 'next/link';
 import OpenSourceSystems from './OpenSourceSystems';
-import { Alert, AlertDescription, AlertTitle } from './ui/alert';
+import { Alert, AlertDescription } from './ui/alert';
 
 const TiyseHeaderTitle: React.FC = () => {
   return (
@@ -33,9 +33,10 @@ const LandingPage: React.FC = () => {
   return (<>
     <header className="flex flex-row items-center justify-center pt-1 mb-5 mx-3">
       {/* <Image className="inline" src="/tiyse.svg" alt="TIYSE Logo" width={90} height={90} /> */}
-      <a href="/" className={`col-span-10 text-8xl text-center block`}>
-        <TiyseHeaderTitle /></a>
+      <Link href="/" className={`col-span-10 text-8xl text-center block`}>
+        <TiyseHeaderTitle />
         <TiyseHeaderAcrostic />
+      </Link>
     </header>
     <div className='mx-3 sm:w-2/5 sm:mx-auto'>
 
@@ -91,10 +92,10 @@ const LandingPage: React.FC = () => {
               Open Source Web Search Interfaces and Engines
             </h2>
             <p className='my-2'>The systems below are identified as principally open source search <span className='font-bold'>interfaces</span> or <span className='font-bold'>engines</span>.
-            The term 'interface' identifies systems that principally open the search user interface.
+            The term &lsquo;interface&rsquo; identifies systems that principally open the search user interface.
             This will include the search bar, the search results, and processing both before and after pulling results from a web search index.
-            The term 'engine' refers to a search engine, inclusive of an interface and index (perhaps also of crawling to update the web index).
-            Note: The 'metasearch' category includes search interfaces that return search results from multiple search services.
+            The term &lsquo;engine&rsquo; refers to a search engine, inclusive of an interface and index (perhaps also of crawling to update the web index).
+            Note: The &lsquo;metasearch&rsquo; category includes search interfaces that return search results from multiple search services.
             </p>
             <p className='my-2'>Open source search systems may be further decomposed and remixed, for example crawling, parsing, generation, filtering, reranking, and systems for search autocomplete and related questions.
             These will be shared above in the search kits section.</p>

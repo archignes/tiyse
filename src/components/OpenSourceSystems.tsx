@@ -76,7 +76,7 @@ const OpenSourceSystemItem: React.FC<{ system: OpenSourceSystemType }> = ({ syst
               </span>
           )}
           {system.githubDescription && (
-            <p id={`github-description-${system.id}`} className="text-sm text-center mx-10 my-2">"{system.githubDescription}"</p>
+          <p id={`github-description-${system.id}`} className="text-sm text-center mx-10 my-2">&quot;{system.githubDescription}&quot;</p>
           )}
       </CardContent>
       <CardFooter className="flex flex-row justify-center">
