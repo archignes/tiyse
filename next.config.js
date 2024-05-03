@@ -5,7 +5,8 @@ module.exports = {
         if (!isServer) {
             config.plugins.push(new BundleAnalyzerPlugin({
                 analyzerMode: 'static',
-                reportFilename: 'bundles.html'
+                reportFilename: 'bundles.html',
+                cache: false
             }));
         }
 
