@@ -1,14 +1,6 @@
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-
 module.exports = {
     webpack(config, { isServer }) {
         if (!isServer) {
-            config.plugins.push(new BundleAnalyzerPlugin({
-                analyzerMode: 'static',
-                reportFilename: 'bundles.html',
-                cache: false
-            }));
-
             config.optimization.splitChunks = {
                 chunks: 'all',
                 minSize: 20000, // Smaller minSize to create more chunks

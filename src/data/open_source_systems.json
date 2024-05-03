@@ -27,6 +27,27 @@
       "output": "generated response"}
   },
   {
+    "name": "Simplicity",
+    "id": "simplicity",
+    "type": "interface",
+    "supportedIndexes": [
+      "Exa"
+    ],
+    "supportedIndexesText": {
+      "text": "exa_client = Exa( os.environ.get(\"EXA_API_KEY\"))",
+      "quote": true,
+      "code": true
+    },
+    "github_description": "Lightweight open-source perplexity",
+    "characteristics": {
+      "output": "generated response"
+    },
+    "search_link": "https://smpl.pongo.ai/",
+    "twitter_link": "https://twitter.com/joinpongo",
+    "open_source_license": "MIT License",
+    "github_link": "https://github.com/PongoAI/simplicity"
+  },
+  {
     "name": "Marginalia Search",
     "type": "engine",
     "id": "marginalia-search",
